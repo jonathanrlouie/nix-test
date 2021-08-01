@@ -209,6 +209,6 @@ gameLoop = do
 
 main : IO Unit
 main = do
-  runStateT gameLoop initBoard 
+  runStateT gameLoop initBoard
   pure ()
   

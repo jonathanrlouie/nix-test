@@ -1,7 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
-let
-  idrTest = import ./test.nix;
-in
-pkgs.mkShell {
+{ testIdr, mkShell }:
+mkShell {
   buildInputs = [ idrTest ];
 }
